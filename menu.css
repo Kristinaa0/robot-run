@@ -1,0 +1,47 @@
+/* תפריט ניווט */
+.navbar {
+    background-color: #6610f2 !important;/* צבע הרקע סגול */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);/* מוסיף צל עדין */
+    position: fixed;/* מקבע את התפריט לראש הדף */
+    width: 100%;/* מוודא שהוא יתפרס על כל הדף */
+    z-index: 1030; /* מבטיח שהתפריט תמיד יהיה מעל התוכן */
+}
+
+
+/* לוגו */
+.navbar-brand {
+    font-weight: bold;/* מדגיש */
+    font-size: 28.8px;/* גודל הפונט */
+    color: white !important;/* הופך את הלוגו ללבן */
+}
+/* מיקום הקישורים של התפריט בצד שמאל */
+.navbar-nav {
+    margin-left: auto !important; /* דוחף את הקישורים לצד שמאל */
+    margin-right: 0 !important;/* מבטל ריווחים מימין */
+    text-align: left;/* מיישר את הטקסט שמאלה */
+}
+
+/* קישורים בתפריט */
+.nav-link {
+    color: white !important;/* כל הקישורים יהיו לבנים */
+    font-weight: 500;/* מודגש מעט */
+    padding: 10px 15px;/* ריווח פנימי שבקישורים לא יהוי צמודים מידיי */
+}
+
+/* אפקט מעבר */
+.nav-link:hover {
+    color: #f8f9fa !important;/* משנה את הקישור לצבע אפור כהה */
+    text-decoration: underline;/* מוסיף קו תחתון כדי להבהיר שבקישור פעיל */
+}
+
+/* ריווח כדי שהתוכן לא יכסה את התפריט */
+body {
+    padding-top: 80px; /* מתחשב בגובה התפריט */
+}
+
+/* התאמה למובייל */
+@media (max-width: 768px) {/* יפעל רק במסכים קטנים */
+    .navbar-nav {
+        text-align: left;/* מיישר את הקישורים שמאלה */
+    }
+}

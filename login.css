@@ -1,0 +1,63 @@
+
+/* עיצוב כללי */
+body {
+    font-family: 'Heebo', sans-serif;/* קובע את הגופן היבו ואם הוא לא קיים אז סאנס-סריף*/
+    background-color: #f4f6f9;/* רקע בצבע אפור בהיר */
+    padding-top: 70px;/* ריווח עליון */
+}
+
+/* טופס התחברות */
+.login-container {
+    direction:ltr;/* כיוון הטקסט משמאל לימין */
+    max-width: 450px;/* הרוחב המקסימלי של הטופס */
+    margin: 50px auto;/* ריווח של 50 פיקסלים מלמעלה ויישור למרכז */
+    padding: 20px;/* ריווח פנימי בטופס */
+    background-color: white;/* רקע לבן לטופס */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);/* צל עדין מסביב לטופס כדי לתת לו מראה בולט */
+    border-radius: 8px;/* עיגול פינות */
+}
+
+.login-container h3 {
+    text-align: center;/* ממקם את הטקסט במרכז */
+    font-size: 28.8px;/* גודל הכתב */
+    margin-bottom: 20px;/* מוסיף ריווח תחתון */
+}
+
+.form-control {
+    border-radius: 6px;/* מעגל את קצוות השדות */
+    margin-bottom: 20px;/* ריווח תחתון בין השדות */
+}
+
+.form-label {
+    font-weight: bold;/* מדגיש את הכיתוב של התוויות */
+}
+
+.gender-options input[type="radio"] {
+    margin-right: 5px;/* מוסיף ריווח מימין לכפתורי הרדיו כדי שלא ייצמד לטקסט */
+}
+
+/* הודעת שגיאה */
+.alert-danger {
+    display: none;/* מסתיר את ההודעה */
+    margin-bottom: 20px;/* ריווח תחתון */
+}
+
+.avatar {
+    width: 100px;/* הופך את התמונה לריבוע בגודל 100*100 */
+    height: 100px;
+    border-radius: 50%;/* הופך את התמונה לעגולה */
+    margin-bottom: 20px;/* ריווח תחתון לתמונה */
+}
+
+/* כפתור */
+.btn-primary {
+    background-color: #6610f2;/* צבע רקע סגול כהה */
+    border: none;/* מסיר את מסגרות הכפתור */
+    padding: 12px 30px;/* ריווח פנימי למעלה למעטה ובצדדים */
+    width: 100%;/* הכפתור יתפוס את כל רוחב הטופס */
+    transition: background-color 0.3s ease;/* שינוי צבע קל כשעוברים עם העכבר */
+}
+
+.btn-primary:hover {
+    background-color: #4a0db6;/* כשמעבירים את העכבר מעל הכפתור הוא נהיה כהה יותר */
+}

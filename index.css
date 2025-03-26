@@ -1,0 +1,78 @@
+
+/* הגדרת הפונט הכללי */
+body {
+    font-family: 'Heebo', sans-serif; /* קובע את הגופן היבו ואם הוא לא קיים אז סאנס-סריף*/
+    padding-top: 70px;/* מוסיף רווח למעלה כדי למנוע חפית הניווט לטקסט*/
+    background-color: #f4f6f9;/* צבע רקע אפור בהיר לכל הדף*/
+}
+
+/* כותרת ראשית עם רקע גרדיאנט */
+.hero-section { 
+  background: linear-gradient(to right, #007bff, #6610f2); /* מגדיר רקע מדורג מכחול לסגול*/
+  color: white; /* כל הטקסט שבהירו יהיה לבן*/
+  padding: 100px 0;/* ריווח פנימי של 100 פיקסלים למעלה ולמעטה*/
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);/* מוסיף צל עדין מתחת לאיזור ההירו*/
+}
+
+.hero-section h1 {
+    font-size: 48px;/* גודל הכותרת הראשית (48 פיקסלים)*/
+    font-weight: 700;/*טקסט עבה*/
+    margin-bottom: 20px;/* מוסיף מרווח מתחת לכותרת*/
+}
+
+.hero-section p {
+    font-size: 19.2px;/* גודל טקסט (19.2 פיקסלים)*/
+    font-weight: 400;/* טקסט רגיל*/
+    margin-bottom: 30px;/* מרווח מתחת לטקסט*/
+}
+
+/* עיצוב כפתור עיקרי */
+.btn-primary {
+    background-color: #6610f2;/* צבע רקע סגול כהה*/
+    border: none;/* מסיר כל גבול לכפתור*/
+    transition: background-color 0.3s ease;/* שינוי צבע רקע בעדינות במשך 0.3 שניות*/
+    font-size: 19.2px;/* גודל טקסט*/
+    padding: 12px 30px;/* מרווח פנימי בכפתור*/
+}
+
+.btn-primary:hover {
+    background-color: #4a0db6;/* משנה צבע לסגול כהה יותר כשעוברים עם העכבר*/
+}
+
+/* שירותים */
+.feature-box {
+    background-color: white;/* צבע רקע לבן*/
+    border-radius: 8px;/* פינות מעוגלות*/
+    padding: 25px;/* ריווח פנימי*/
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);/* מוסיף צל קל מסביב לקופסא*/
+    transition: transform 0.3s ease;/* מאפשר אנימציה חלקה כלומר הקופסא מזיזה את עצמה*/
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);/* כשעוברים עם העכבר מעל הקופסא היא תעלה למעלה ב10 פיקסלים*/
+}
+
+.feature-box h3 {
+    font-size: 24px;/* כותרת גדולה*/
+    font-weight: 600;/* מודגש*/
+    color: #6610f2;/* צבע סגול כהה*/
+    margin-bottom: 15px;/* ריווח תחתון*/
+}
+
+.feature-box p {
+    font-size: 16px;/* גודל הטקסט*/
+    color: #6c757d;/* טקסט אפור כהה*/
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;/* רקע אפור בהיר*/
+    padding: 30px 0;/* ריווח פנימי למעלה ולמעטה*/
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);/* מוסיף צל קל מעל*/
+}
+
+footer p {
+    color: #343a40;/* צבע הטקסט אפור כהה*/
+    font-size: 16px;/* גודל הכתב*/
+    font-weight: 500;/* מודגש*/
+}
