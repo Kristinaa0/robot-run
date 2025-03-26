@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl"><!--שולט על מיקום האובייקטים בדף(מימין לשמאל) וקובע שהשפה היא עברית-->
+<head>
+  <meta charset="UTF-8"> <!-- מגדיר את הקידוד כך שהתווים יוצגו נכון  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- מאפשר עיצוב רספונסיבי שיתאים לנייד  -->
+  <title>רובוט חכם לשליטה בעוצמת האור | עמוד מוצר</title><!-- שם הדף -->
+  
+  <!-- קישור ל-Bootstrap 5 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  
+  <!-- קישורי CSS חיצוניים -->
+  <link rel="stylesheet" href="/css/index.css"><!-- סגנונות לעמוד about -->
+  <link rel="stylesheet" href="/css/menu.css"><!-- סגנונות לתפריט -->
+  
+  <!-- Font Awesome לאייקונים -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+</head>
+<body>
+   <!-- תפריט ניווט -->
+   <nav class="navbar navbar-expand-lg navbar-light fixed-top"><!-- תגית התפריט(ניווט) הופך אותו
+     לרספונסיבי ומדביק אותו ללמעלה של הדף -->
+    <div class="container">
+        <a class="navbar-brand" href="index.html">רובוט חכם</a><!-- כותרת התפריט מקשרת אותו לעמוד הראשי -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><!-- מתאים את התפרייט למסכים קטנים
+            (ובודק אם התפריט פתוח או סגור) -->
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">home</a></li><!-- קישור לדף הבית -->
+                <li class="nav-item"><a class="nav-link" href="control.html">control</a></li><!-- קישור לדף שליטה -->
+                <li class="nav-item"><a class="nav-link" href="about.html">about the robot</a></li><!-- קישור לדף אודות -->
+                <li class="nav-item"><a class="nav-link" href="login.html">login</a></li><!-- קישור לדף התחברות -->
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+  <!-- כותרת ראשית (Hero Section) -->
+  <header class="hero-section text-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold">הרובוט החכם לשליטה בתאורה</h1><!-- כותרת ראשית גדולה -->
+      <p class="lead">שליטה אוטומטית בתאורה בכל חדר בעזרת טכנולוגיית IoT</p><!-- פסקת פתיחה -->
+    </div>
+  </header>
+
+  <!-- אודות המוצר -->
+  <section class="container my-5">
+    <h2 class="mb-4 text-primary">אודות המוצר</h2><!-- כותרת משנית -->
+    <p>
+      הרובוט החכם שלנו משלב טכנולוגיה מתקדמת המאפשרת לו לשלוט בעוצמת האור ולהתאים את התאורה למשתמש ולתנאי הסביבה. 
+      בעזרת יכולות זיהוי תנועה והתחמקות ממכשולים, הרובוט מאפשר חווית תאורה אוטומטית, חסכונית וחדשנית.
+    </p><!-- תיאור המוצר -->
+    
+    <h3 class="mt-4">היתרונות של הרובוט החכם:</h3><!-- כותרת משנה נוספת -->
+    <ul>
+      <li><strong>שליטה אוטומטית בתאורה:</strong> שינוי עוצמת האור בצורה חכמה בהתאם לתנאי החדר ומיקום המשתמש.</li><!-- יתרון 1 -->
+      <li><strong>חסכון באנרגיה:</strong> התאמה אוטומטית שמפחיתה את צריכת החשמל.</li><!-- יתרון 2 -->
+      <li><strong>זיהוי תנועה חכם:</strong> הרובוט מזהה מיקומים ומתחמק ממכשולים בזמן אמת.</li><!-- יתרון 3 -->
+      <li><strong>שליטה מרחוק:</strong> שימוש באפליקציה מבוססת IoT לשליטה מכל מקום ובכל זמן.</li><!-- יתרון 4 -->
+      <li><strong>קל לשימוש:</strong> התקנה פשוטה ומהירה שמתחברת לכל מערכת תאורה קיימת.</li><!-- יתרון 5 -->
+    </ul>
+  </section>
+
+  <!-- טבלת מאפיינים טכניים -->
+  <section class="container my-5">
+    <h2 class="mb-4 text-primary">מאפיינים טכניים</h2><!-- כותרת לטבלה -->
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped"><!-- טבלה עם מסגרות ורצועות -->
+        <thead>
+          <tr>
+            <th>מאפיין</th><!-- כותרת עמודה -->
+            <th>תיאור</th><!-- כותרת עמודה -->
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>חיישנים</td><!-- שורת הטבלה -->
+            <td>חיישני תנועה ומרחק לזיהוי מכשולים ותנועת משתמשים</td>
+          </tr>
+          <tr>
+            <td>קישוריות</td>
+            <td>חיבור Wi-Fi לצורך שליטה מרחוק באמצעות IoT</td>
+          </tr>
+          <tr>
+            <td>תאורה</td>
+            <td>תמיכה בנורות LED בעלות עוצמה משתנה</td>
+          </tr>
+          <tr>
+            <td>אפליקציה</td>
+            <td>אפליקציה חכמה לניהול התאורה והגדרות המערכת</td>
+          </tr>
+          <tr>
+            <td>סוללה</td>
+            <td>סוללת ליתיום נטענת המספיקה ל-8 שעות עבודה</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- הסבר: איך זה עובד -->
+  <section class="container my-5">
+    <h2 class="mb-4 text-primary">איך זה עובד?</h2><!-- כותרת משנית -->
+    <p>
+      הרובוט פועל בצורה פשוטה ואינטואיטיבית: הוא מזהה את מיקומך בחדר ומתחיל לפעול בצורה חכמה, 
+      כאשר הוא מתאים את עוצמת התאורה בהתאם למיקום שלך, לזיהוי תנועה ולמידע שנאסף מחיישנים חכמים. בנוסף, 
+      ניתן לשלוט בתאורה דרך האפליקציה מכל מקום, להפעיל מצבי תאורה שונים ולהגדיר זמנים לתאורה אוטומטית.
+    </p><!-- הסבר על אופן הפעולה -->
+  </section>
+
+  <!-- הזמנה ופרטים נוספים -->
+  <section class="container my-5 text-center">
+    <h2 class="mb-4 text-primary">הזמנה ופרטים נוספים</h2><!-- כותרת להזמנה -->
+    <p>
+      לפרטים נוספים או להזמנה של הרובוט החכם, לחצו על הכפתור למטה או צרו עמנו קשר דרך דף צור קשר.
+    </p><!-- הסבר להזמנה -->
+    <a href="#" class="btn btn-primary btn-lg">הזמן עכשיו</a><!-- כפתור קריאה לפעולה -->
+  </section>
+
+  <!-- פוטר -->
+  <footer class="bg-light text-center py-4">
+    <p>© 2024 כל הזכויות שמורות - רובוט חכם לשליטה בתאורה</p><!--טקסט הפוטר (למעטה)-->
+  </footer>
+
+  <!-- קישורי סקריפטים ל-Bootstrap 5 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
